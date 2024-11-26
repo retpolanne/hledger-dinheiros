@@ -66,7 +66,7 @@ CLARO
   comment internet-telefonia:
 ```
 
-Leia [essa doc](https://hackage.haskell.org/package/hledger-lib-1.3/src/doc/hledger_csv.5.txt) para mais regras.
+Leia [essa doc](https://hackage.haskell.org/package/hledger-lib-1.3/src/doc/hledger_csv.5.txt) para mais regras. [Aqui](https://hledger.org/1.29/hledger.html) também tem mais informação.
 
 ### 3 – make import
 
@@ -79,3 +79,41 @@ make import
 ``` sh
 hledger print | grep unknown -B 2
 ```
+
+## Hledger tips and tricks
+
+### Vendo payees – pra quem eu paguei ou de quem eu recebi
+
+``` sh
+hledger payees
+```
+
+### Vendo todas as transações feitas para a Uber
+
+``` sh
+hledger print --pivot uber tag:uber
+```
+
+### Organizando transações
+
+Eu organizo minhas transações pessoais assim: 
+
+```
+if NomeDaPsicologa
+   comment cat:saude, kind:psicoterapia
+   account2 expenses:saude
+```
+
+E assim eu posso filtrar: 
+
+``` sh
+hledger print --pivot cat tag:kind=psicoterapia
+```
+
+Eu tenho também uma regra em `common.rules` em que todas as transações são categorizadas como `unknown`, facilitando a conferência delas no hledger.
+
+``` sh
+hledger print --pivot cat tag:cat=unknown
+```
+
+`

@@ -1,26 +1,68 @@
+if .*
+   comment cat:unknown
+
+if Estorno
+   comment cat:transferencia, kind:estorno
+
 if Netflix
+Amazonprimebr
+   comment cat:entretenimento, kind:streaming
    account2 expenses:streaming
 
+if Nintendo
+   comment cat:entreteniment, kind:games
+   account2 expenses:games
+
 if AliExpress
-   comment aliexpress:
+   comment cat:compras, kind:aliexpress
    account2 expenses:compras
 
+if Shein
+   comment cat:compras, kind:roupas
+   account2 expenses:roupas
+
+if Mercadolivre
+   comment cat:compras, kind:mercadolivre
+   account2 expenses:compras
+
+if DROGASIL
+Rdsaude
+   comment cat:saude, kind:farmacia
+   account2 expenses:saude
+
 if Recarga
-   comment internet-telefonia:
+   comment cat:comunicacao, kind:recarga
    account2 expenses:servicos
 
 if fatura
-   comment cartao-credito:
+   comment cat:fatura, kind:cartao
    account2 expenses:cartao-credito
 
 if Uber
-   comment uber:
+   comment cat:transportes, kind:uber
+   account2 expenses:transporte
+
+if Autopass
+   comment cat:transportes, kind:publico
    account2 expenses:transporte
 
 if Ifd
-   comment delivery:
+Ifood
+   comment cat:restaurantes, kind:ifood
    account2 expenses:restaurantes
 
+if Zé Delivery
+   comment cat:mercado, kind:bebidas
+   account2 expenses:mercado
+
 if Transferência recebida
-   comment transferencia
-   account2 income:others
+   comment cat:transferencia, kind:income
+   account2 income:transferencia
+
+if Transferência enviada
+   comment cat:transferencia, kind:out
+   account2 expenses:transferencia
+
+if CONDOMIN|condominio
+   comment cat:casa, kind:condominio
+   account2 expenses:casa
