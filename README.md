@@ -1,5 +1,8 @@
 # Hledger – controle de dinheiros
 
+**Disclaimer: o código publicado aqui é de autoria minha, Anne Isabelle Macedo, e não
+contém propriedade intelectual da Nubank**
+
 Esse é um repo que facilita o controle financeiro usando [hledger](https://hledger.org).
 
 Com ele, é possível categorizar finanças de forma automatizada a partir de algumas regras.
@@ -76,5 +79,3 @@ make import
 ``` sh
 hledger print | grep unknown -B 2
 ```
-
-`
