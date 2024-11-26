@@ -4,7 +4,7 @@ Esse é um repo que facilita o controle financeiro usando [hledger](https://hled
 
 Com ele, é possível categorizar finanças de forma automatizada a partir de algumas regras.
 
-*YMMV (your mileage may vary)* - esse repo foi feito com base no Nubank e no
+*YMMV (your mileage may vary)* - esse repo foi feito com base no Nubank, iCloud e no
 macOS. Se quiser, pode fazer um fork ou abrir um PR adicionando outros formatos de bancos e etc. 
 
 ## Passos
@@ -14,7 +14,23 @@ macOS. Se quiser, pode fazer um fork ou abrir um PR adicionando outros formatos 
 Eu fiz a seguinte automação no app Shortcuts do meu iPhone pra copiar o extrato do
 Nubank automaticamente para meu drive do iCloud. Eu mantenho meus extratos no diretório `~/Documents/extrato_nu/`
 
-**TODO** – adicionar prints e passo a passo do nubank aqui.
+![image](https://github.com/user-attachments/assets/27b6ee12-b20c-4692-9f67-493219b5f467)
+
+![image](https://github.com/user-attachments/assets/17263b6b-8475-4fe7-91fe-707b4ea6ce99)
+
+É possível também exportar a fatura do cartão de crédito (fechada) como CSV. 
+
+![image](https://github.com/user-attachments/assets/716039fa-fe4b-4767-b0df-0545fb39d79e)
+
+![image](https://github.com/user-attachments/assets/7a9b9747-d438-4730-a107-04fc7d6c6744)
+
+Por fim, fiz a seguinte automação no Shortcuts no iPhone. 
+
+![image](https://github.com/user-attachments/assets/333c0451-9b1e-4a31-9fdb-f4bd205de1f7)
+
+![image](https://github.com/user-attachments/assets/f6206344-e41d-4f33-b148-49e72398b05c)
+
+
 
 ### 1 – clone esse repo e rode o make init
 
