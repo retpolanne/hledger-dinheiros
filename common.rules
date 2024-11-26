@@ -1,0 +1,26 @@
+if Netflix
+   account2 expenses:streaming
+
+if AliExpress
+   comment aliexpress:
+   account2 expenses:compras
+
+if Recarga
+   comment internet-telefonia:
+   account2 expenses:servicos
+
+if fatura
+   comment cartao-credito:
+   account2 expenses:cartao-credito
+
+if Uber
+   comment uber:
+   account2 expenses:transporte
+
+if Ifd
+   comment delivery:
+   account2 expenses:restaurantes
+
+if Transferência recebida
+   comment transferencia
+   account2 income:others

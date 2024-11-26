@@ -1,0 +1,10 @@
+fields date, amount, id, description
+separator ,
+date-format %-d/%-m/%Y
+currency R$
+account1 assets:bank:checking
+decimal-mark .
+skip 1
+
+include common.rules
+include private.rules
