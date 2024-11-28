@@ -6,5 +6,7 @@ account1 assets:bank:credit
 decimal-mark .
 skip 1
 
-include common.rules
+amount -%amount
+
 include private.rules
+include common.rules

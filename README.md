@@ -115,5 +115,3 @@ Eu tenho também uma regra em `common.rules` em que todas as transações são c
 ``` sh
 hledger print --pivot cat tag:cat=unknown
 ```
-
-`
