@@ -1,6 +1,15 @@
 if .
    comment cat:unknown
 
+if Transferência recebida
+   comment cat:transferencia, kind:income
+   account2 income:transferencia
+
+if Transferência enviada
+   comment cat:transferencia, kind:out
+   account2 expenses:transferencia
+
+
 if Estorno
    comment cat:transferencia, kind:estorno
 
@@ -49,6 +58,7 @@ if fatura
    account2 expenses:cartao-credito
 
 if Uber
+UBER
    comment cat:transportes, kind:uber
    account2 expenses:transporte
 
@@ -64,14 +74,6 @@ Ifood
 if Zé Delivery
    comment cat:mercado, kind:bebidas
    account2 expenses:mercado
-
-if Transferência recebida
-   comment cat:transferencia, kind:income
-   account2 income:transferencia
-
-if Transferência enviada
-   comment cat:transferencia, kind:out
-   account2 expenses:transferencia
 
 if CONDOMIN|condominio
    comment cat:casa, kind:condominio
