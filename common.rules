@@ -1,4 +1,4 @@
-if .*
+if .
    comment cat:unknown
 
 if Estorno
@@ -6,11 +6,20 @@ if Estorno
 
 if Netflix
 Amazonprimebr
+Youtub
+Spotify
    comment cat:entretenimento, kind:streaming
    account2 expenses:streaming
 
+if Digitalocea
+Google
+1password
+   comment cat:ferramentas, kind:ferramentas-digitais
+   account2 expenses:ferramentas
+
 if Nintendo
-   comment cat:entreteniment, kind:games
+Sonyplaystatn
+   comment cat:entretenimento, kind:games
    account2 expenses:games
 
 if AliExpress
@@ -27,6 +36,7 @@ if Mercadolivre
 
 if DROGASIL
 Rdsaude
+Drogaria
    comment cat:saude, kind:farmacia
    account2 expenses:saude
 
@@ -65,4 +75,17 @@ if Transferência enviada
 
 if CONDOMIN|condominio
    comment cat:casa, kind:condominio
+   account2 expenses:casa
+
+if GRPQA
+   comment cat:casa, kind:aluguel
+   account2 expenses:casa
+
+if ELETROPAULO
+   comment cat:casa, kind:luz
+   account2 expenses:casa
+
+if OXXO
+HORTIFRUTI
+   comment cat:casa, kind:mercado
    account2 expenses:casa

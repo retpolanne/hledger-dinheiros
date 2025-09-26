@@ -1,2 +1,2 @@
-private.rules
 *.csv
+.DS_Store

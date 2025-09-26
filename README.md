@@ -78,6 +78,8 @@ make import
 
 ``` sh
 hledger print | grep unknown -B 2
+# Ou a partir de uma determinada data
+hledger print -p "2025-08-01 to today" | grep unknown -B 2
 ```
 
 ## Hledger tips and tricks
